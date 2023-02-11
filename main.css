@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* Start Variables */
 :root {
     --main-color: #d9a926;
-    --second-color: #262525;
+    --second-color: #444;
     --white: #fff;
     --black: #000;
     --section-padding: 60px;
@@ -31,8 +31,7 @@ html {
 }
 
 body {
-    font-family: 'Changa', sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -213,7 +212,7 @@ header .nav .nav-link:is(.active)::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #0000005e;
+    background-color: #000000b5;
     z-index: 0;
 }
 
@@ -240,6 +239,12 @@ header .nav .nav-link:is(.active)::before {
 
 .we .image {
     width: 30%;
+    overflow: hidden;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .welcome-text {
@@ -303,7 +308,12 @@ header .nav .nav-link:is(.active)::before {
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 1.7;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.we p span {
+    color: var(--main-color);
+    font-size: 18px;
 }
 
 .we .image img {
@@ -317,6 +327,10 @@ header .nav .nav-link:is(.active)::before {
     -o-transition: var(--transition);
     cursor: pointer;
     box-shadow: 0 0 8px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .we .image img:hover {
@@ -428,9 +442,11 @@ header .nav .nav-link:is(.active)::before {
     -o-transition: var(--transition);
     aspect-ratio: 4 /2.5;
     object-fit: cover;
+    cursor: pointer;
 }
 
-.more-info .image img:hover {
+.more-info .image img:hover,
+.we img:hover {
     scale: 1.1;
     rotate: -1deg;
 }
