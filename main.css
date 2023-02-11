@@ -501,6 +501,7 @@ header .nav .nav-link:is(.active)::before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 .services .content {
